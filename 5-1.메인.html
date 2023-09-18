@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/slick-1.8.1/slick.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+  <title>메인화면</title>
+
+</head>
+<body>
+
+  <div class="eu-container">
+    <header class="header">
+      <div class="inner">
+        <!-- 로고 -->
+        <h1 aria-hidden="true" class="logo">
+          <a href="index.html"><img src="images/logo-header.png" alt="이음5G 로고" /></a>
+        </h1>
+        
+        <!-- 대메뉴 -->
+        <nav class="nav">
+          <div class="bg"></div>
+          <div id="gnb">
+            <ul>
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">이음5G소개</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">이음5G 소개</a></li>
+                  <li><a href="#">이음5G 지원센터</a></li>
+                  <li><a href="#">주파수 신청절차</a></li>
+                  <li><a href="#">기간통신사업자 등록 절차</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">이음5G 서비스현황</span>
+                </a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#">현황조회(GIS기반)</a>
+                    <!-- 새창열기 아이콘 샘플 -->
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
+                  <li class="active"><a href="#">무선국 현황(데이터)</a></li>
+                  <li>
+                    <a href="#">장비인증 현황</a>
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
+                  <li><a href="#">무선국추이</a></li>
+                  <li><a href="#">주파수대역 신청</a></li>
+                  <li><a href="#">주파수대역 결과</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">테크인사이트</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">이음5G알아보기</a></li>
+                  <li><a href="#">이음5G 응용/Use Case</a></li>
+                  <li><a href="#">이음5G 활용사례</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">기술분석 서비스</span>
+                </a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#">수평공유 분석모듈</a>
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="#">주파수 소요량 산출</a>
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="#">서비스영역 기준거리계산</a>
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
+                  <li><a href="#">오프라인 전문툴 문의</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">커뮤니티</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">정책산업뉴스</a></li>
+                  <li><a href="#">이음5G 산업생태계</a></li>
+                  <li><a href="#">자료실</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">고객센터</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">주요 FAQ</a></li>
+                  <li><a href="#">묻고답하기 Q&A</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- 오른쪽 아이콘 -->
+        <div class="nav-icon-wrap">
+          <button class="btn search" onclick="">
+            <input type="text" class="header-search" placeholder="검색어를 입력하세요." />
+            <img src="images/icons/icon-search.png" />
+          </button>
+          <button class="btn mypage"><img src="images/icons/icon-mypage.png" /></button>
+          <button class="btn menu"><img src="images/icons/icon-menu.png" /></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 모바일 헤더 -->
+    <header class="header-mobile">
+      <div class="inner">
+        <button class="btn menu"><img src="images/icons/icon-menu.png" /></button>
+        <h1 aria-hidden="true" class="logo">
+          <a href="index.html"><img src="images/logo-header.png" alt="이음5G 로고" /></a>
+        </h1>
+        <div class="nav-icon-wrap">
+          <button class="btn search" onclick="">
+            <input type="text" class="header-search" placeholder="검색어를 입력하세요." />
+            <img src="images/icons/icon-search.png" />
+          </button>
+          <button class="btn mypage"><img src="images/icons/icon-mypage.png" /></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 모바일 메뉴 -->
+    <div class="mobile-menu">
+      <div class="m-menu-header">
+        <button class="btn close"><img src="images/icons/icon-close.png" /></button>
+        <button class="btn search ml-auto">
+          <input type="text" class="header-search" placeholder="검색어를 입력하세요." />
+          <img src="images/icons/icon-search.png" />
+        </button>
+        <button class="btn mypage"><img src="images/icons/icon-mypage.png" /></button>
+      </div>
+      <div class="m-menu">
+        <ul class="acc">
+          <li class="acc-title">
+            <a href="javascript:void(0)">이음5G 소개</a>
+            <button class="btn open"></button>
+            <ul class="acc-cont">
+              <li><a href="javascript:void(0)">이음5G소개</a></li>
+              <li><a href="javascript:void(0)">이음5G 지원센터</a></li>
+              <li><a href="javascript:void(0)">주파수 신청절차</a></li>
+              <li><a href="javascript:void(0)">기간통신사업자 등록 절차</a></li>
+            </ul>
+          </li>
+          <!-- acc-title(대메뉴) .active상태 표시(펼쳐짐) -->
+          <li class="acc-title active-open">
+            <a href="javascript:void(0)">이음5G 서비스현황</a>
+            <button class="btn open"></button>
+            <ul class="acc-cont">
+              <!-- acc-cont(소메뉴) .active상태 표시(글자색변함) -->
+              <li class="active"><a href="javascript:void(0)">하위메뉴 2-1</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 2-2</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 2-3</a></li>
+            </ul>
+          </li>
+          <li class="acc-title">
+            <a href="javascript:void(0)">테크인사이트</a>
+            <button class="btn open"></button>
+            <ul class="acc-cont">
+              <li><a href="javascript:void(0)">하위메뉴 3-1</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 3-2</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 3-3</a></li>
+            </ul>
+          </li>
+          <li class="acc-title">
+            <a href="javascript:void(0)">기술분석서비스</a>
+            <button class="btn open"></button>
+            <ul class="acc-cont">
+              <li><a href="javascript:void(0)">하위메뉴 4-1</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 4-2</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 4-3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <!-- 메일 비주얼 -->
+      <div class="main-bg">
+        <div class="main-bg-pt2"></div>   <!-- 배경화면 패턴2 -->
+        <div class="inner">
+          <div class="main-bg-pt1"></div> <!-- 배경화면 패턴1 -->
+
+          <div class="grid-col-3 gap-col-46 main-visual-wrap">
+            <!-- 메인 비주얼 - 왼쪽 컨텐츠 -->
+            <div class="col-span-2 main-visual">
+              <div class="main-visual-title">
+                <div class="tit">
+                  5G Mobile Communication
+                  Specialized Network
+                </div>
+                <div class="sub">
+                  특정 구역 전용 주파수를 통해 누구나 사용할 수 있는
+                  최첨단 맞춤형 5G 네트워크 이음5G가 함께합니다.
+                </div>
+                <button class="btn btn-40 btn-blue-semi">자세히보기</button>
+              </div>
+            </div>    <!-- main-visual --- end -->
+            <!-- 메인 비주얼 - 오른쪽 슬라이드 -->
+            <div class="col-span-1 main-slider">
+              <div class="page-info"></div>
+              <div class="slider page-slider">
+                <div class="item">
+                  <div class="tit">1. 글로벌 이음5G 정책 및 구축현황 정보 플랫폼</div>
+                  <div class="sub">
+                    인접대역 사용자와의 공존을 위해 일부지역(특정공항 등)에서의 
+                    전송전력 및 안테나 높이 등의 제한사항이 발생할 수 있음을 고지하고 
+                    ’22년 8월 현재 105개 개방형 5G실험 서비스가 승인 완료되었습니다.
+                  </div>
+                  <div class="date">2023-06-05</div>
+                </div>
+                <div class="item">
+                  <div class="tit">2. 글로벌 이음5G 정책 및 구축현황 정보 플랫폼</div>
+                  <div class="sub">
+                    인접대역 사용자와의 공존을 위해 일부지역(특정공항 등)에서의 
+                    전송전력 및 안테나 높이 등의 제한사항이 발생할 수 있음을 고지하고 
+                    ’22년 8월 현재 105개 개방형 5G실험 서비스가 승인 완료되었습니다.
+                    인접대역 사용자와의 공존을 위해 일부지역(특정공항 등)에서의 
+                    전송전력 및 안테나 높이 등의 제한사항이 발생할 수 있음을 고지하고 
+                    ’22년 8월 현재 105개 개방형 5G실험 서비스가 승인 완료되었습니다.
+                  </div>
+                  <div class="date">2023-06-05</div>
+                </div>
+                <div class="item">
+                  <div class="tit">3. 글로벌 이음5G</div>
+                  <div class="sub">
+                    인접대역 사용자와의 공존을 위해 일부지역(특정공항 등)에서의 
+                  </div>
+                  <div class="date">2023-06-05</div>
+                </div>
+              </div>
+            </div>  <!-- main-slider --- end -->
+          </div>    <!-- main-visual-wrap --- end -->
+        </div>      <!-- inner --- end -->
+      </div>
+      <!-- main-bg --- end -->
+
+      <section class="wrap mt-30 pb-0">
+        <!-- 1. Tech Inside -->
+        <div class="inner tech-inside">
+          <div class="grid-col-5 gap-80">
+            <div class="col-span-3">
+              <!-- tab -->
+              <div class="tab-wrap main">
+                <div class="tab-head">
+                  <div class="title">Tech Inside</div>
+                  <ul class="tab">
+                    <li class="on" data-tab="menu1"><a href="javascript:void(0)">개요자료</a></li>
+                    <li data-tab="menu2"><a href="javascript:void(0)">업계현황</a></li>
+                  </ul>
+                  <button class="btn ml-auto"><span>+</span></button>
+                </div>
+                <div id="menu1" class="tabcont on">
+                  <!-- 개요자료 Tab -->
+
+                  <div class="webzine-wrap border-0">
+                    <a href="javascript:void(0)">
+                      <div class="webzine no-img">
+                        <div class="webzine-text">
+                          <div class="tit">이음 5G망 구축 모델 (6): 이음 5G 사업자의 5G Core 전체 공유형 서비스 사례</div>
+                          <div class="text">
+                            여기서는 일본, 미국의 이음 5G 사업자의 5G Core 전체 공유형 
+                            (사업장내 RAN만 구축하고 5G Core는 이음 5G 사업자의 
+                            클라우드 서비스로 이용) 서비스 사례를 살펴본다.
+                          </div>
+                          <div class="sub">
+                            <span class="date">2023-08-07</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <div class="webzine no-img">
+                        <div class="webzine-text">
+                          <div class="tit">이음 5G망 구축 모델 (6): 이음 5G 사업자의 5G Core 전체 공유형 서비스 사례
+                            이음 5G망 구축 모델 (6): 이음 5G 사업자의 5G Core 전체 공유형 서비스 사례
+                            이음 5G망 구축 모델 (6): 이음 5G 사업자의 5G Core 전체 공유형 서비스 사례
+                          </div>
+                          <div class="text">
+                            여기서는 일본, 미국의 이음 5G 사업자의 5G Core 전체 공유형 
+                            (사업장내 RAN만 구축하고 5G Core는 이음 5G 사업자의 
+                            클라우드 서비스로 이용) 서비스 사례를 살펴본다.
+                            여기서는 일본, 미국의 이음 5G 사업자의 5G Core 전체 공유형 
+                            (사업장내 RAN만 구축하고 5G Core는 이음 5G 사업자의 
+                            클라우드 서비스로 이용) 서비스 사례를 살펴본다.
+                            여기서는 일본, 미국의 이음 5G 사업자의 5G Core 전체 공유형 
+                            (사업장내 RAN만 구축하고 5G Core는 이음 5G 사업자의 
+                            클라우드 서비스로 이용) 서비스 사례를 살펴본다.
+                          </div>
+                          <div class="sub">
+                            <span class="date">2023-08-07</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+                <div id="menu2" class="tabcont">
+                  <p>업계현황 Tab</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 탭인사이트 오른쪽 이미지 영역  -->
+            <div class="col-span-2">
+              <div class="tech-inside-img">
+                <div class="text-wrap">
+                  <div class="tit">기간통신사업자 등록절차</div>
+                  <div class="sub">이음5G 등록에 필요한 등록요건과 제출서류 및 심사항목을 자세히 알려드립니다.</div>
+                  <a href="javascript:void(0)">
+                    <div class="sub link">개요</div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="sub link">등록요건</div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="sub link">제출서류 및 항목</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    <!-- inner --- end -->
+        <!-- Tech Inside --- end -->
+
+        <!-- 2. Community -->
+        <div class="inner mt-84 community">
+          <div class="grid-col-7" style="column-gap: 17.4rem;">
+            <div class="col-span-2 commu-wrap">
+              <div class="title">Community</div>
+              <div class="commu-link">
+                <a href="javascript:void(0)" class="active">정책산업뉴스</a>
+                <a href="javascript:void(0)" class="">공지사항</a>
+                <a href="javascript:void(0)" class="">자주하는 질문</a>
+              </div>
+            </div>     <!-- commu-wrap --- end -->
+            <div class="col-span-5 commu-list">
+              <div class="list-wrap">
+                <div class="date">25<span>2023.05</span></div>
+                <div class="title-wrap">
+                  <div class="title">
+                    <span class="text-blue2">정책</span>
+                    <span class="ellipsis">
+                      창원국가산단에 5G 특화망 도입, 스마트공장 인프라 구축 지원
+                      창원국가산단에 5G 특화망 도입, 스마트공장 인프라 구축 지원
+                    </span>
+                    <span class="new ml-auto"></span>
+                  </div>
+                  <div class="sub">경남테크노파크, 이달 말 자동차부품사 센트랄에 이음 5G 구축 시작
+                    경남테크노파크, 이달 말 자동차부품사 센트랄에 이음 5G 구축 시작
+                  </div>
+                </div>
+                <button class="btn ml-auto"><span>+</span></button>
+              </div>
+              <div class="list-wrap">
+                <div class="date">23<span>2023.05</span></div>
+                <div class="title-wrap">
+                  <div class="title">
+                    <span class="text-blue2">정책</span>
+                    <span class="ellipsis">
+                      과기정통부, 5G 특화망 수요 기반 확산 전략 내놓는다
+                      <!-- 과기정통부, 5G 특화망 수요 기반 확산 전략 내놓는다 -->
+                      <!-- 과기정통부, 5G 특화망 수요 기반 확산 전략 내놓는다 -->
+                    </span>
+                  </div>
+                  <div class="sub">과학기술정보통신부가 5세대(5G) 이동통신 특화망 시장을 수요 기반으로 확산한다.
+                    과학기술정보통신부가 5세대(5G) 이동통신 특화망 시장을 수요 기반으로 확산한다.
+                  </div>
+                </div>
+                <button class="btn ml-auto"><span>+</span></button>
+              </div>
+              <div class="list-wrap">
+                <div class="date">03<span>2023.05</span></div>
+                <div class="title-wrap">
+                  <div class="title">
+                    <span class="text-blue2">산업</span>
+                    <span class="ellipsis">
+                      4.7GHz 대역 ‘이음5G’ 단말 출시, 사이버텔브릿지-퀄컴 성과
+                    </span>
+                    <span class="new ml-auto"></span>
+                  </div>
+                  <div class="sub">5G 중대역(sub-6)에 대응하는 이음5G(특화망) 전용 스마트폰형 단말이 출시됐다.</div>
+                </div>
+                <button class="btn ml-auto"><span>+</span></button>
+              </div>
+            </div>    <!-- commu-list --- end -->
+          </div>
+        </div>     <!-- inner --- end -->
+        <!-- Community --- end -->
+
+        <!-- 3. Solution -->
+        <div class="solution-wrap mt-90">
+          <div class="inner">
+            <div class="solution-slider grid-col-7">
+              <!-- 제품솔루션소개 왼쪽 영역 -->
+              <div class="col-span-2">
+                <div class="title-wrap">
+                  <div class="title">제품 솔루션 소개</div>
+                  <span>이음 5G의 장비, 단말, 기간통신, 공사엔지니어링 제품 및 솔루션을 소개합니다.</span>
+                </div>
+              </div>
+              <!-- 제품솔루션소개 슬라이드 영역 -->
+              <div class="col-span-5 pt-70 pb-40" style="position: relative;"> 
+                <div class="slider">
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/dummy-img-5.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                      <div class="text-blue2">장비</div>
+                      <div class="flex-col gap-8">
+                        <div class="tit">[LS전선] 이음5G Cabling자재
+                          [LS전선] 이음5G Cabling자재
+                          [LS전선] 이음5G Cabling자재
+                        </div>
+                        <div class="date">2023-05-21</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/dummy-img-6.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                      <div class="text-blue2">단말</div>
+                      <div class="flex-col gap-8">
+                        <div class="tit">[우리넷] 이음5G 단말기</div>
+                        <div class="date">2023-05-21</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/dummy-img-7.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                      <div class="text-blue2">기간통신</div>
+                      <div class="flex-col gap-8 flex-1">
+                        <div class="tit">[KT MOS북부] 이음5G 서비스 소개</div>
+                        <div class="date">2023-05-21</div>
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/dummy-img-1.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                      <div class="text-blue2">장비</div>
+                      <div class="flex-col gap-8">
+                        <div class="tit">[LS전선] 이음5G Cabling자재
+                          [LS전선] 이음5G Cabling자재
+                          [LS전선] 이음5G Cabling자재
+                        </div>
+                        <div class="date">2023-05-21</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/dummy-img-2.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                      <div class="text-blue2">단말</div>
+                      <div class="flex-col gap-8">
+                        <div class="tit">[우리넷] 이음5G 단말기</div>
+                        <div class="date">2023-05-21</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/dummy-img-3.png" alt="">
+                    </div>
+                    <div class="text-wrap">
+                      <div class="text-blue2">기간통신</div>
+                      <div class="flex-col gap-8 flex-1">
+                        <div class="tit">[KT MOS북부] 이음5G 서비스 소개</div>
+                        <div class="date">2023-05-21</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="controler">
+                  <button class="play"></button>
+                  <button class="stop"></button>
+                </div>
+              </div>
+            </div>
+          </div>    <!-- inner --- end -->
+        </div>
+        <!-- Solution --- end -->
+
+        <!-- 4. About Us -->
+        <div class="inner about-us-wrap">
+          <div class="title-wrap">
+            <div class="title">About Us</div>  
+            <div class="">함께 성장할 수 있는 이음5G와 함께하세요. </div>
+          </div>
+          <div class="icon-wrap">
+            <a href="javascript:void(0)">
+              <div class="icon">
+                <img src="images/icons/icon-about-1.png" alt="자료실 아이콘" />
+              </div>
+              <div class="icon-text">자료실</div>
+            </a>
+            <a href="javascript:void(0)">
+              <div class="icon">
+                <img src="images/icons/icon-about-2.png" class="ml-14" alt="주파수대역 신청 아이콘" />
+              </div>
+              <div class="icon-text">주파수대역 신청</div>
+            </a>
+            <a href="javascript:void(0)">
+              <div class="icon">
+                <img src="images/icons/icon-about-3.png" class="mb-6" alt="이음5G지원센터 아이콘" />
+              </div>
+              <div class="icon-text">이음5G지원센터</div>
+            </a>
+            <a href="javascript:void(0)">
+              <div class="icon">
+                <img src="images/icons/icon-about-4.png" alt="기술분석서비스 아이콘" />
+              </div>
+              <div class="icon-text">기술분석서비스</div>
+            </a>
+          </div>
+        </div>    <!-- inner --- end -->
+        <!-- About Us --- end -->
+
+        <div class="banner">
+          <!-- 배너 배경영역 -->
+          <div class="grid-col-2">
+            <div class="banner-bg-l">
+              <div class="mask text-white"></div>
+            </div>
+            <div class="banner-bg-r">
+              <div class="mask text-white"></div>
+            </div>
+          </div>
+          <!-- 배너 텍스트영역 -->
+          <div class="grid-col-2 inner">
+            <div class="title-wrap">
+              <div class="title">주파수 신청절차</div>
+              <div class="sub">이음5G 주파수 지정, 할당에 관한 절차를 자세히 알려드립니다.</div>
+              <button class="btn btn-30 btn-banner-black">자세히보기</button>
+            </div>
+            <div class="title-wrap">
+              <div class="title">장비인증현황</div>
+              <div class="sub">평가를 받은 기기, 모델명, 업체명, <br/>인증/등록일 등을 검색하실 수 있습니다.</div>
+              <button class="btn btn-30 btn-banner-green">자세히보기</button>
+            </div>
+          </div>    <!-- inner --- end -->
+        </div>
+        <!-- banner --- end -->
+
+
+        <div class="channel-wrap">
+          <div class="inner">
+            <div class="channel-slider grid-col-12">
+              <div class="col-span-2 title-wrap">
+                <div class="title">소통채널</div>
+                <div class="controler">
+                  <button class="play"></button>
+                  <button class="stop"></button>
+                </div>
+              </div>
+              <div class="col-span-10" style="position: relative;">
+                <div class="slider">
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-1.png" alt="과학기술정보통신부">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-2.png" alt="한국방송통신전파진흥원">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-3.png" alt="한국전자통신연구원">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-4.png" alt="정보통신산업진흥원">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-5.png" alt="정보통신기획평가원">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-6.png" alt="중앙전파관리소">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-7.png" alt="국립전파연구원">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-8.png" alt="한국지능정보사회진흥원">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-9.png" alt="한국정보통신기술협회">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-10.png" alt="무선국검사">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-11.png" alt="국가기술자격검정">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-12.png" alt="전파누리">
+                    </div>
+                  </a>
+                  <a href="javascript:void(0)">
+                    <div class="img-wrap">
+                      <img src="images/channel-logo-13.png" alt="국가법령정보센터">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>    <!-- inner --- end -->
+        </div>
+        <!-- channel-wrap --- end -->
+
+      </section>
+
+
+    </div>
+
+    <footer class="footer">
+      <div class="inner">
+        <div class="flex-row gap-col-40 mb-60 flex-wrap">
+          <a href="javascript:void(0)" class="btn-text">개인정보처리방침</a>
+          <a href="javascript:void(0)" class="btn-text">이용약관</a>
+          <a href="javascript:void(0)" class="btn-text">이메일무단수집 거부</a>
+        </div>
+        <div class="flex-row gap-col-40 mb-10 flex-wrap">
+          <div>[30128] 세종특별자치시 나성동 790 이음5G지원센터</div>
+          <div>대표전화: 044-903-8893</div>
+          <div>E-MAIL: local5g@kca.kr</div>
+        </div>
+        <div>Copyright ⓒ Eum5g. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+  </div>    <!-- eu-container --- end -->
+
+
+</body>
+<script>
+  $(document).ready(function(e){
+    event.preventDefault();
+    // 대메뉴 active 상태 (active-bar 클래스 추가)
+    $('.dp1 > span').click(function(e){
+      $(this).toggleClass('active-bar');
+    });
+
+    var $gnb = $('#gnb');
+    // 1단계 메뉴 높이
+    var gnb_height = '12rem';
+    // 2단계 메뉴 높이
+    var gnb_dp2_height = '479px';
+
+    //베경 bg 높이 제어
+    var $bg = $('.bg');
+    var bg_height = '360px';
+    var bg_hide = '0';
+
+    // gnb 초기화(2단계 메뉴 숨기기)
+    $gnb.css('height', gnb_height);
+    $bg.css('height', bg_hide);
+  
+    // 마우스 hover 드롭다운 메뉴 제어
+    $gnb.on({
+      mouseenter: function(e){
+        $(this).stop().animate({ height: gnb_dp2_height });
+        $bg.stop().animate({ height: bg_height });
+        $bg.css('border-top', '1px solid #E3E3E3').css('border-bottom', '1px solid #E3E3E3');
+      },
+      mouseleave: function(e){
+        $(this).stop().animate({ height: gnb_height });
+        $bg.stop().animate({ height: bg_hide });
+        $bg.css('border-top', '0').css('border-bottom', '0');
+      },
+    });
+
+    // 키보드(tab키, esc키) focus 드롭다운 메뉴 제어
+    // $(document).keydown(function(event) {
+    //   if ( event.keyCode == 9 || event.which == 9 ) {
+    //     $bg.stop().animate({ height: bg_height });
+    //     $gnb.stop().animate({ height: gnb_dp2_height });
+    //     $gnb.css('height', '480px');
+    //   }
+    //   if ( event.keyCode == 27 || event.which == 27 ) {
+    //     $gnb.stop().animate({ height: gnb_height });
+    //     $bg.stop().animate({ height: bg_hide });
+    //   }
+    // });
+
+
+    // 탭 메뉴
+    $('ul.tab li').click(function() {
+      var activeTab = $(this).attr('data-tab');
+      $('ul.tab li').removeClass('on');
+      $('.tabcont').removeClass('on');
+      $(this).addClass('on');
+      $('#' + activeTab).addClass('on');
+    })
+
+
+    // 메인비주얼 슬라이드
+    var $status = $('.page-info');
+    var $slickElement = $('.page-slider');
+    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.html(
+          '<div class="page-text">최신공지사항</div>'
+          + '<div class="currnet-page">0' + i + '</div>' 
+          + '<div class="full-page"> / 0' + slick.slideCount + '</div>'
+        );
+    });
+    $('.page-slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 0,
+      fade: true,
+      cssEase: 'linear',
+      autoplay : true, 
+      autoplaySpeed : 5000,
+    });
+
+    // 커뮤니티 링크 active클래스 추가
+    $(".commu-link > a").click(function(){
+      if($(".commu-link > a").hasClass("active")){
+        $(".commu-link > a").removeClass("active");
+      }
+      $(".commu-link > a").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    // 솔루션 슬라이드
+    $('.solution-slider .slider').slick({
+      autoplay : true, 
+      autoplaySpeed : 2000,
+      arrows : true, 
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      variableWidth: true,
+    }); 
+
+    $('.solution-slider .play').click(function(){
+      $('.solution-slider .slider').slick('slickPlay');
+      $('.solution-slider .play').css('display', 'none');
+      $('.solution-slider .stop').css('display', 'block');
+    });
+      
+    $('.solution-slider .stop').click(function(){
+      $('.solution-slider .slider').slick('slickPause');
+      $('.solution-slider .stop').css('display', 'none');
+      $('.solution-slider .play').css('display', 'block');
+    });
+
+    // 소통채널 슬라이드
+    $('.channel-slider .slider').slick({
+      autoplay : true, 
+      autoplaySpeed : 2000,
+      arrows : true, 
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      variableWidth: true,
+    }); 
+
+    $('.channel-slider .play').click(function(){
+      $('.channel-slider .slider').slick('slickPlay');
+      $('.channel-slider .play').css('display', 'none');
+      $('.channel-slider .stop').css('display', 'block');
+    });
+      
+    $('.channel-slider .stop').click(function(){
+      $('.channel-slider .slider').slick('slickPause');
+      $('.channel-slider .stop').css('display', 'none');
+      $('.channel-slider .play').css('display', 'block');
+    });
+
+    //헤더 검색폼 click 이벤트
+    $( ".btn.search" ).on( "click", function() {
+      $(this).find('.header-search').css('display', 'block');
+      $('.header-search').focus();
+    });
+    $(".header-search").focusout(function(){
+      $('.header-search').css('display', 'none');
+    });
+
+    // 헤더 모바일 메뉴 열기/닫기 버튼
+    $(".btn.menu").on( "click", function() {
+      $(".mobile-menu").fadeIn(100);
+      $("html").css('overflow-y', 'hidden');
+    });
+    $(".m-menu-header > .btn.close").on( "click", function() {
+      $(".mobile-menu").fadeOut(0);
+      $("html").css('overflow-y', 'auto');
+    });
+
+    // 모바일 메뉴
+    // icon 버튼만 open-close
+    $('.btn.open').click(function(){
+      if($(this).hasClass('open')){
+        $(this).parent().find(".acc-cont").stop().slideDown(200);
+        $(this).parent().css('padding-bottom', '0')
+      }
+      if($(this).hasClass('close')){
+        $(this).parent().find(".acc-cont").stop().slideUp(0);
+        $(this).parent().css('padding-bottom', '16px')
+      }
+      $(this).toggleClass('open close')
+    })
+
+    // 대메뉴 active 상태(첫번째 대메뉴 열린 상태로)
+    $('.acc > li:first-child').addClass('active-open');
+    $('.acc-title.active-open').find('.btn').removeClass('open');
+    $('.acc-title.active-open').find('.btn').addClass('close');
+      
+    // row(한줄) 클릭시 open-close
+    // $('.acc-title').click(function(e){
+    //   console.log($(this).find(".acc-cont"));
+    //   if($(this).children('.btn.open').hasClass('open')){
+    //     $(this).find(".acc-cont").stop().slideDown(200);
+    //     $(this).find(".acc-cont").css('display', 'block');
+    //     $(this).css('padding-bottom', '0');
+    //   }
+    //   if($(this).children('.btn.close').hasClass('close')){
+    //     $(this).find(".acc-cont").stop().slideUp(0);
+    //     $(this).find(".acc-cont").css('display', 'none');
+    //     $(this).css('padding-bottom', '16px');
+    //   }
+    //   $(this).children('.btn').toggleClass('open close');
+    // });
+
+
+    
+    
+
+
+  });
+</script>
+</html>
+
+

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+  <title>공지사항 뷰(상세보기)</title>
+
+</head>
+<body>
+
+  <div class="eu-container">
+    <header class="header">
+      <div class="inner">
+        <!-- 로고 -->
+        <h1 aria-hidden="true">
+          <a href="index.html"><img src="images/logo-header.png" alt="이음5G 로고" /></a>
+        </h1>
+        
+        <!-- 대메뉴 -->
+        <nav class="nav">
+          <div class="bg"></div>
+          <div id="gnb">
+            <ul>
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">이음5G소개</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">이음5G 소개</a></li>
+                  <li><a href="#">이음5G 지원센터</a></li>
+                  <li><a href="#">주파수 신청절차</a></li>
+                  <li><a href="#">기간통신사업자 등록 절차</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">이음5G 서비스현황</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">현황조회(GIS기반)</a></li>
+                  <li class="active"><a href="#">무선국 현황(데이터)</a></li>
+                  <li><a href="#">장비인증 현황</a></li>
+                  <li><a href="#">무선국추이</a></li>
+                  <li><a href="#">주파수대역 신청</a></li>
+                  <li><a href="#">주파수대역 결과</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">테크인사이트</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">이음5G알아보기</a></li>
+                  <li><a href="#">이음5G 응용/Use Case</a></li>
+                  <li><a href="#">이음5G 활용사례</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">기술분석 서비스</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">수평공유 분석모듈</a></li>
+                  <li><a href="#">주파수 소요량 산출</a></li>
+                  <li><a href="#">서비스영역 기준거리계산</a></li>
+                  <li><a href="#">오프라인 전문툴 문의</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">커뮤니티</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">정책산업뉴스</a></li>
+                  <li><a href="#">이음5G 산업생태계</a></li>
+                  <li><a href="#">자료실</a></li>
+                </ul>
+              </li>
+
+              <li class="depth1">
+                <a class="dp1" href="javascript:void(0)">
+                  <span class="ko">고객센터</span>
+                </a>
+                <ul class="depth2">
+                  <li><a href="#">주요 FAQ</a></li>
+                  <li><a href="#">묻고답하기 Q&A</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- 오른쪽 아이콘 -->
+        <div class="nav-icon-wrap">
+          <button class="btn"><img src="images/icons/icon-search.png" /></button>
+          <button class="btn"><img src="images/icons/icon-mypage.png" /></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="body-container">
+      <!-- 메뉴바 -->
+      <section id="snb" class="snb">
+        <div class="inner">
+          <div class="menu-bar">
+            <div class="dropdown">
+              <div class="deps-1">
+                  <span>커뮤니티</span>
+                  <button class="eu-btn-dropdown-arrow">
+                    <i class="icon"></i>
+                  </button>
+              </div>
+              <div class="deps-menu-popover">
+                  <a href="#">
+                      <span>커뮤니티</span>
+                  </a>
+                  <a href="#">이음5G소개</a>
+                  <a href="#">이음5G 서비스현황</a>
+                  <a href="#">테크인사이트</a>
+                  <a href="#">기술분석 서비스</a>
+                  <a href="#">커뮤니티</a>
+                  <a href="#">고객센터</a>
+              </div>
+            </div>
+            <span class="deps-line"></span>
+
+              <div class="dropdown">
+                  <div class="deps-1">
+                      <span>공지사항</span>
+                      <button class="eu-btn-dropdown-arrow">
+                        <i class="icon"></i>
+                      </button>
+                  </div>
+                  <div class="deps-menu-popover">
+                      <a href="#">
+                          <span>공지사항</span>
+                      </a>
+                      <a href="#">정책산업뉴스</a>
+                      <a href="#">이음5G 산업생태계</a>
+                      <a href="#">자료실</a>
+                  </div>
+              </div>
+              <span class="deps-line"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap">
+        <div class="inner">
+
+          <!-- 타이틀 -->
+          <div class="title">공지사항<span class="line mt-22 mb-60"></span></div>
+
+          <!-- 상세보기 테이블 1 -->
+          <div class="table-responsive no-scroll">
+            <table class="table eu-table-view">
+              <colgroup>
+                <col width="100%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td class="headline">
+                    이음5G 지원포털 서비스를 개시하였습니다.
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="info">
+                      <div><b class="mr-4">등록자</b> 관리자</div>
+                      <div><b class="mr-4">등록일</b> 2023-08-07</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <!-- <div class="fs-30 flex-col-center cont" style="height: 500px; background: #f1f1f1;">컨텐츠 영역</div> -->
+                    <div class="cont">
+                      <P class="mb-20 strong">이음 5G 웹사이트가 드디어 오픈되었습니다.</P>
+                      <P>
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                      </P>
+                      <P>지금부터는 이음 5G의 다양한 혁신적인 기능과 서비스를 만나보실 수 있습니다.</P>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>
+                    <div class="flex-row">
+                      <div class="label w-10">첨부파일</div>
+                      <div class="w-90">
+                        <a href="javascript:void(0)" class="new-attach"> 5G Core 전체 공유형 서비스 사례.300.jpg</a>
+                        <a href="javascript:void(0)" class="new-attach"> 5G Core 전체 공유형 서비스 사례.300.jpg</a>
+                        <a href="javascript:void(0)" class="new-attach"> 5G Core 전체 공유형 서비스 사례.300.jpg</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="text-r">
+            <button class="btn btn-50 btn-navy mt-32">목록보기</button>
+          </div>
+
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+          <!-- 상세보기 테이블 2 -->
+          <div class="table-responsive no-scroll">
+            <table class="table eu-table-view">
+              <colgroup>
+                <col width="10%" />
+                <col width="30%" />
+                <col width="10%" />
+                <col width="30%" />
+                <col width="10%" />
+                <col width="10%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>제목</th>
+                  <td colspan="5">이음 5G망 구축 모델 (6): 이음 5G 사업자의 5G Core 전체 공유형 서비스 사례</td>
+                </tr>
+                <tr>
+                  <th>분류 *</th
+                    >
+                  <td>이음5G 알아보기</td>
+                  <td class="tit">카테고리 *</td>
+                  <td colspan="3">개요 자료</td>
+                </tr>
+                <tr>
+                  <th>작성자</th>
+                  <td>손장우 (son@netmanias.com)</td>
+                  <th>작성일</th>
+                  <td>2022-12-26</td>
+                  <th>조회수</th>
+                  <td class="text-c">443</td>
+                </tr>
+                <tr>
+                  <td class="tit">요약글</td>
+                  <td colspan="5">
+                    여기서는 일본, 미국의 이음 5G 사업자의 5G Core 전체 공유형 
+                    (사업장내 RAN만 구축하고 5G Core는 이음 5G 사업자의 클라우드 서비스로 이용) 
+                    서비스 사례를 살펴본다.
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="6">
+                    <div class="cont">
+                      <div class="fs-30 flex-col-center" style="height: 500px; background: #f1f1f1;">컨텐츠 영역</div>
+                      <br/>
+                      <P class="mb-20 strong">이음 5G 웹사이트가 드디어 오픈되었습니다.</P>
+                      <P>
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                        이제부터 우리는 더 빠르고 안정적인 5G 네트워크로 새로운 디지털 세상을 경험할 수 있게 되었습니다.
+                      </P>
+                      <P>지금부터는 이음 5G의 다양한 혁신적인 기능과 서비스를 만나보실 수 있습니다.</P>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot class="bor">
+                <tr>
+                  <td>대표이미지</td>
+                  <td colspan="5">
+                    <a href="javascript:void(0)"> 5G Core 전체 공유형 서비스 사례.300.jpg</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>첨부파일</td>
+                  <td colspan="5">
+                      <a href="javascript:void(0)" class="new-attach"> 5G Core 전체 공유형 서비스 사례.300.jpg</a>
+                      <a href="javascript:void(0)" class="new-attach"> 5G Core 전체 공유형 서비스 사례.300.jpg</a>
+                      <a href="javascript:void(0)" class="new-attach"> 5G Core 전체 공유형 서비스 사례.300.jpg</a>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!-- 페이징 -->
+          <div aria-label="Page navigation example" class="paging">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+                  <span aria-hidden="true">
+                    <img src="images/icons/icon-page-first.png" alt="맨처음으로" />
+                  </span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+                  <span aria-hidden="true">
+                    <img src="images/icons/icon-page-prev.png" alt="이전으로" />
+                  </span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)"><span>1</span></a></li>
+              <li class="page-item active"><a class="page-link" href="javascript:void(0)"><span>2</span></a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)"><span>3</span></a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)"><span>4</span></a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)"><span>5</span></a></li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)" aria-label="Next">
+                  <span aria-hidden="true">
+                    <img src="images/icons/icon-page-next.png" alt="다음으로" />
+                  </span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)" aria-label="Next">
+                  <span aria-hidden="true">
+                    <img src="images/icons/icon-page-last.png" alt="맨끝으로" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="text-r">
+            <button class="btn btn-50 btn-navy mt-0">목록보기</button>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="inner">
+      <div class="flex-row gap-col-40 mb-60 flex-wrap">
+        <a href="javascript:void(0)" class="btn-text">개인정보처리방침</a>
+        <a href="javascript:void(0)" class="btn-text">이용약관</a>
+        <a href="javascript:void(0)" class="btn-text">이메일무단수집 거부</a>
+      </div>
+      <div class="flex-row gap-col-40 mb-10 flex-wrap">
+        <div>[30128] 세종특별자치시 나성동 790 이음5G지원센터</div>
+        <div>대표전화: 044-903-8893</div>
+        <div>E-MAIL: local5g@kca.kr</div>
+      </div>
+      <div>Copyright ⓒ Eum5g. All Rights Reserved.</div>
+    </div>
+  </footer>
+  
+</body>
+<script>
+  $(document).ready(function(e){
+    event.preventDefault();
+    // 대메뉴 active 상태 (active-bar 클래스 추가)
+    $('.dp1 > span').click(function(e){
+      $(this).toggleClass('active-bar');
+    });
+
+    var $gnb = $('#gnb');
+    // 1단계 메뉴 높이
+    var gnb_height = '12rem';
+    // 2단계 메뉴 높이
+    var gnb_dp2_height = '480px';
+
+    //베경 bg 높이 제어
+    var $bg = $('.bg');
+    var bg_height = '360px';
+    var bg_hide = '0';
+
+    // gnb 초기화(2단계 메뉴 숨기기)
+    $gnb.css('height', gnb_height);
+    $bg.css('height', bg_hide);
+  
+    // 마우스 hover 드롭다운 메뉴 제어
+    $gnb.on({
+      mouseenter: function(e){
+        $(this).stop().animate({ height: gnb_dp2_height });
+        $bg.stop().animate({ height: bg_height });
+      },
+      mouseleave: function(e){
+        $(this).stop().animate({ height: gnb_height });
+        $bg.stop().animate({ height: bg_hide });
+      },
+    });
+
+    // 키보드(tab키, esc키) focus 드롭다운 메뉴 제어
+    // $(document).keydown(function(event) {
+    //   if ( event.keyCode == 9 || event.which == 9 ) {
+    //     $bg.stop().animate({ height: bg_height });
+    //     $gnb.stop().animate({ height: gnb_dp2_height });
+    //     $gnb.css('height', '480px');
+    //   }
+    //   if ( event.keyCode == 27 || event.which == 27 ) {
+    //     $gnb.stop().animate({ height: gnb_height });
+    //     $bg.stop().animate({ height: bg_hide });
+    //   }
+    // });
+
+
+
+  });
+
+  //임시 테이블
+  var table = document.getElementById('template');
+  for(let i = 2; i < 20; i++){
+    var row = '<tr><td class="text-c">' + i + '</td>'
+      + '<td><a href="javascript:void(0)">우리넷, 5G 미국 시장 진출…스마트팩토리 통신망 구축</a></td>'
+      + '<td class="text-c">관리자</td>'
+      + '<td class="text-c">2023-08-04</td>'
+      + '<td class="text-c">123</td></tr>';
+    table.innerHTML += row
+  }
+
+
+</script>
+</html>
+
+
