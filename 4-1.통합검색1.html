@@ -7,6 +7,7 @@
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
   <link rel="stylesheet" type="text/css" href="css/common.css" />
   <title>통합검색1 - 통합</title>
 
@@ -43,9 +44,16 @@
                   <span class="ko">이음5G 서비스현황</span>
                 </a>
                 <ul class="depth2">
-                  <li><a href="#">현황조회(GIS기반)</a></li>
+                  <li>
+                    <a href="#">현황조회(GIS기반)</a>
+                    <!-- 새창열기 아이콘 샘플 -->
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
                   <li class="active"><a href="#">무선국 현황(데이터)</a></li>
-                  <li><a href="#">장비인증 현황</a></li>
+                  <li>
+                    <a href="#">장비인증 현황</a>
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
                   <li><a href="#">무선국추이</a></li>
                   <li><a href="#">주파수대역 신청</a></li>
                   <li><a href="#">주파수대역 결과</a></li>
@@ -57,7 +65,7 @@
                   <span class="ko">테크인사이트</span>
                 </a>
                 <ul class="depth2">
-                  <li><a href="#">이음5G알아보기</a></li>
+                  <li><a href="2-2.웹진형.html">이음5G알아보기</a></li>
                   <li><a href="#">이음5G 응용/Use Case</a></li>
                   <li><a href="#">이음5G 활용사례</a></li>
                 </ul>
@@ -68,9 +76,18 @@
                   <span class="ko">기술분석 서비스</span>
                 </a>
                 <ul class="depth2">
-                  <li><a href="#">수평공유 분석모듈</a></li>
-                  <li><a href="#">주파수 소요량 산출</a></li>
-                  <li><a href="#">서비스영역 기준거리계산</a></li>
+                  <li>
+                    <a href="#">수평공유 분석모듈</a>
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="#">주파수 소요량 산출</a>
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
+                  <li>
+                    <a href="#">서비스영역 기준거리계산</a>
+                    <a href="http://naver.com" class="icon-target" target="_blank"></a>
+                  </li>
                   <li><a href="#">오프라인 전문툴 문의</a></li>
                 </ul>
               </li>
@@ -80,10 +97,10 @@
                   <span class="ko">커뮤니티</span>
                 </a>
                 <ul class="depth2">
-                  <li><a href="#">공지사항</a></li>
-                  <li><a href="#">정책산업뉴스</a></li>
-                  <li><a href="#">이음5G 산업생태계</a></li>
-                  <li><a href="#">자료실</a></li>
+                  <li><a href="1-1.공지사항.html">공지사항</a></li>
+                  <li><a href="1-2.공지사항.html">정책산업뉴스</a></li>
+                  <li><a href="2-1.갤러리형.html">이음5G 산업생태계</a></li>
+                  <li><a href="3-1.로그인.html">자료실</a></li>
                 </ul>
               </li>
 
@@ -102,11 +119,87 @@
 
         <!-- 오른쪽 아이콘 -->
         <div class="nav-icon-wrap">
-          <button class="btn"><img src="images/icons/icon-search.png" /></button>
-          <button class="btn"><img src="images/icons/icon-mypage.png" /></button>
+          <button class="btn search" onclick="">
+            <input type="text" class="header-search" placeholder="검색어를 입력하세요." />
+            <img src="images/icons/icon-search.png" />
+          </button>
+          <button class="btn mypage"><img src="images/icons/icon-mypage.png" /></button>
+          <button class="btn menu"><img src="images/icons/icon-menu.png" /></button>
         </div>
       </div>
     </header>
+
+    <!-- 모바일 헤더 -->
+    <header class="header-mobile">
+      <div class="inner">
+        <button class="btn menu"><img src="images/icons/icon-menu.png" /></button>
+        <h1 aria-hidden="true" class="logo">
+          <a href="index.html"><img src="images/logo-header.png" alt="이음5G 로고" /></a>
+        </h1>
+        <div class="nav-icon-wrap">
+          <button class="btn search" onclick="">
+            <input type="text" class="header-search" placeholder="검색어를 입력하세요." />
+            <img src="images/icons/icon-search.png" />
+          </button>
+          <button class="btn mypage"><img src="images/icons/icon-mypage.png" /></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 모바일 메뉴 -->
+    <div class="mobile-menu">
+      <div class="m-menu-header">
+        <button class="btn close"><img src="images/icons/icon-close.png" /></button>
+        <button class="btn search ml-auto">
+          <input type="text" class="header-search" placeholder="검색어를 입력하세요." />
+          <img src="images/icons/icon-search.png" />
+        </button>
+        <button class="btn mypage"><img src="images/icons/icon-mypage.png" /></button>
+      </div>
+      <div class="m-menu">
+        <ul class="acc">
+          <li class="acc-title">
+            <a href="javascript:void(0)">이음5G 소개</a>
+            <button class="btn open"></button>
+            <ul class="acc-cont">
+              <li><a href="javascript:void(0)">이음5G소개</a></li>
+              <li><a href="javascript:void(0)">이음5G 지원센터</a></li>
+              <li><a href="javascript:void(0)">주파수 신청절차</a></li>
+              <li><a href="javascript:void(0)">기간통신사업자 등록 절차</a></li>
+            </ul>
+          </li>
+          <!-- acc-title(대메뉴) .active상태 표시(펼쳐짐) -->
+          <li class="acc-title active-open">
+            <a href="javascript:void(0)">이음5G 서비스현황</a>
+            <button class="btn open"></button>
+            <ul class="acc-cont">
+              <!-- acc-cont(소메뉴) .active상태 표시(글자색변함) -->
+              <li class="active"><a href="javascript:void(0)">하위메뉴 2-1</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 2-2</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 2-3</a></li>
+            </ul>
+          </li>
+          <li class="acc-title">
+            <a href="javascript:void(0)">테크인사이트</a>
+            <button class="btn open"></button>
+            <ul class="acc-cont">
+              <li><a href="javascript:void(0)">하위메뉴 3-1</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 3-2</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 3-3</a></li>
+            </ul>
+          </li>
+          <li class="acc-title">
+            <a href="javascript:void(0)">기술분석서비스</a>
+            <button class="btn open"></button>
+            <ul class="acc-cont">
+              <li><a href="javascript:void(0)">하위메뉴 4-1</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 4-2</a></li>
+              <li><a href="javascript:void(0)">하위메뉴 4-3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div class="body-container">
       <!-- 메뉴바 -->
@@ -176,86 +269,31 @@
 
         </div>
       </section>
-
-      <footer class="footer">
-        <div class="inner">
-          <div class="flex-row gap-col-40 mb-60 flex-wrap">
-            <a href="javascript:void(0)" class="btn-text">개인정보처리방침</a>
-            <a href="javascript:void(0)" class="btn-text">이용약관</a>
-            <a href="javascript:void(0)" class="btn-text">이메일무단수집 거부</a>
-          </div>
-          <div class="flex-row gap-col-40 mb-10 flex-wrap">
-            <div>[30128] 세종특별자치시 나성동 790 이음5G지원센터</div>
-            <div>대표전화: 044-903-8893</div>
-            <div>E-MAIL: local5g@kca.kr</div>
-          </div>
-          <div>Copyright ⓒ Eum5g. All Rights Reserved.</div>
-        </div>
-      </footer>      
-
     </div>
-  </div>
 
+    <footer class="footer">
+      <div class="inner">
+        <div class="flex-row gap-col-40 flex-wrap">
+          <a href="javascript:void(0)" class="btn-text">개인정보처리방침</a>
+          <a href="javascript:void(0)" class="btn-text">이용약관</a>
+          <a href="javascript:void(0)" class="btn-text">이메일무단수집 거부</a>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="inner mb-26">
+        <div class="flex-row gap-col-40 flex-wrap">
+          <div>[30128] 세종특별자치시 나성동 790 이음5G지원센터</div>
+          <div>대표전화: 044-903-8893</div>
+          <div>E-MAIL: local5g@kca.kr</div>
+        </div>
+        <div>Copyright ⓒ Eum5g. All Rights Reserved.</div>
+      </div>
+    </footer>
+  </div>    <!-- eu-container --- end -->
 </body>
 <script>
   $(document).ready(function(e){
-    event.preventDefault();
-    // 대메뉴 active 상태 (active-bar 클래스 추가)
-    $('.dp1 > span').click(function(e){
-      $(this).toggleClass('active-bar');
-    });
-
-    var $gnb = $('#gnb');
-    // 1단계 메뉴 높이
-    var gnb_height = '12rem';
-    // 2단계 메뉴 높이
-    var gnb_dp2_height = '480px';
-
-    //베경 bg 높이 제어
-    var $bg = $('.bg');
-    var bg_height = '360px';
-    var bg_hide = '0';
-
-    // gnb 초기화(2단계 메뉴 숨기기)
-    $gnb.css('height', gnb_height);
-    $bg.css('height', bg_hide);
-  
-    // 마우스 hover 드롭다운 메뉴 제어
-    $gnb.on({
-      mouseenter: function(e){
-        $(this).stop().animate({ height: gnb_dp2_height });
-        $bg.stop().animate({ height: bg_height });
-      },
-      mouseleave: function(e){
-        $(this).stop().animate({ height: gnb_height });
-        $bg.stop().animate({ height: bg_hide });
-      },
-    });
-
-    // 키보드(tab키, esc키) focus 드롭다운 메뉴 제어
-    // $(document).keydown(function(event) {
-    //   if ( event.keyCode == 9 || event.which == 9 ) {
-    //     $bg.stop().animate({ height: bg_height });
-    //     $gnb.stop().animate({ height: gnb_dp2_height });
-    //     $gnb.css('height', '480px');
-    //   }
-    //   if ( event.keyCode == 27 || event.which == 27 ) {
-    //     $gnb.stop().animate({ height: gnb_height });
-    //     $bg.stop().animate({ height: bg_hide });
-    //   }
-    // });
-
-
-    // 탭 메뉴
-    $('ul.tab li').click(function() {
-      var activeTab = $(this).attr('data-tab');
-      $('ul.tab li').removeClass('on');
-      $('.tabcont').removeClass('on');
-      $(this).addClass('on');
-      $('#' + activeTab).addClass('on');
-    })
-
-
+    
 
   });
 </script>

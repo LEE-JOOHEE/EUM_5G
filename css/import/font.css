@@ -75,13 +75,19 @@
   src: url("../../fonts/AvenirNextLTPro-Regular.otf") format('opentype');
 }
 @font-face {
+  font-family: "AvenirNext-600";
+  font-weight: 600;
+  src: url("../../fonts/AvenirNextLTPro-Demi.otf") format('opentype');
+}
+@font-face {
   font-family: "AvenirNext-700";
   font-weight: 700;
   src: url("../../fonts/AvenirNextLTPro-Bold.otf") format('opentype');
 }
-.title-eng{ font-family: "AvenirNext-700";
+.title-eng{ font-family: "AvenirNext-600";
   font-size: 3.8rem; line-height: 5.1rem; color: #222222;}
 .f-eng-400{font-family: "AvenirNext-400" !important;}
+.f-eng-600{font-family: "AvenirNext-600" !important;}
 .f-eng-700{font-family: "AvenirNext-700" !important;}
 
 /* ======================================================== */
